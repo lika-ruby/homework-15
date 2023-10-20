@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   padding: 0 15px;
   outline: solid red;
   margin: 0 auto;
@@ -303,6 +304,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.portfolio-article-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .container-article {
@@ -310,6 +317,10 @@ body {
   border-right: 1px solid var(--frame-color, #eee);
   border-left: 1px solid var(--frame-color, #eee);
   padding: 20px 24px;
+}
+
+.portfolio-article-photo {
+  width: 100%;
 }
 
 .portfolio-article-title {
